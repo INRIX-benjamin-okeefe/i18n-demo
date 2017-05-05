@@ -1,7 +1,8 @@
 {
-	"i18n.button.english.text": "English",
-	"i18n.button.japanese.text": "Japanese",
-	"i18n.button.spanish.text": "Spanish",
+	"i18n.button.english.text": "America",
+	"i18n.button.japanese.text": "Japan",
+	"i18n.button.spanish.text": "Spain",
 	"i18n.button.canada.text": "Canada",
-	"i18n.welcome.message": "Welcome to America!"
+	"i18n.welcome.message": "Welcome to America!",
+	"i18n.flag.image": "america.svg"
 }

@@ -5,6 +5,7 @@ define(function (require) {
         ModuleView = require('common/platform/ModuleView'),
         Button = require('common/ui/Button'),
         TextView = require('common/ui/TextView'),
+        ImageView = require('common/ui/ImageView'),
         LocaleStrings = require('common/lib/LocaleStrings');
 
     /**
@@ -73,6 +74,14 @@ define(function (require) {
             }).render(this.getView());
         }
 
+        renderFlagImage () {
+            new ImageView({
+                model: {
+                    src: `${MODULE_PATH}/images/${this.i18n.getString('i18n.flag.image')}`
+                }
+            }).render(this.getView());
+        }
+
         renderUI () {
             const view = this.getView();
 
@@ -82,6 +91,7 @@ define(function (require) {
 
             this.renderButtons();
             this.renderWelcomeMessage();
+            this.renderFlagImage();
         }
     };
 });

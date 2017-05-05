@@ -1,7 +1,8 @@
 {
-	"i18n.button.english.text": "English",
-	"i18n.button.japanese.text": "Japanese",
-	"i18n.button.spanish.text": "Spanish",
+	"i18n.button.english.text": "America",
+	"i18n.button.japanese.text": "Japan",
+	"i18n.button.spanish.text": "Spain",
 	"i18n.button.canada.text": "Canada",
-	"i18n.welcome.message": "This language is not supported"
+	"i18n.welcome.message": "This locale is not supported",
+	"i18n.flag.image": ""
 }
