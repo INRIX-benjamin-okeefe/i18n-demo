@@ -3,4 +3,4 @@ This demo is meant to demonstrate various internationalization features availabl
 
 ## Installation
 1. Clone this repo into your OpenCar workspace
-2. Launch the OpenCar Framework, click the "Launch App" menu, then select `i18n-demo`
+2. Launch the OpenCar Simulator, click the "Launch App" menu, then select `i18n-demo`
