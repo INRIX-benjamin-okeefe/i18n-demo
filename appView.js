@@ -4,6 +4,7 @@ define(function (require) {
     const
         ModuleView = require('common/platform/ModuleView'),
         Button = require('common/ui/Button'),
+        TextView = require('common/ui/TextView'),
         LocaleStrings = require('common/lib/LocaleStrings');
 
     /**
@@ -32,20 +33,14 @@ define(function (require) {
         beforeStart () {
             return super.beforeStart().then(() => {
                 this.loadI18n('en-us').then(() => {
-                    this.renderButtons();
+                    this.renderUI();
                 });
             });
         }
 
         buttonClickHandler (languageRegionCode) {
             this.loadI18n(languageRegionCode).then(() => {
-                const view = this.getView();
-
-                while (view.hasChildNodes()) {
-                    view.removeChild(view.lastChild);
-                }
-
-                this.renderButtons();
+                this.renderUI();
             });
         }
 
@@ -67,6 +62,26 @@ define(function (require) {
                     }
                 }).render(this.getView());
             });
+        }
+
+        renderWelcomeMessage () {
+            new TextView({
+                id: "welcome-text-view",
+                model: {
+                    text: this.i18n.getString('i18n.welcome.message')
+                }
+            }).render(this.getView());
+        }
+
+        renderUI () {
+            const view = this.getView();
+
+            while (view.hasChildNodes()) {
+                view.removeChild(view.lastChild);
+            }
+
+            this.renderButtons();
+            this.renderWelcomeMessage();
         }
     };
 });

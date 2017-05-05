@@ -5,3 +5,8 @@ body {
 button + button {
 	margin-left: 10px;
 }
+
+#welcome-text-view {
+	display: block;
+	margin-top: 15px;
+}
