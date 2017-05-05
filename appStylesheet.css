@@ -1,1 +1,7 @@
-/* Use this CSS file to define the styling for your application */
+body {
+	padding: 20px;
+}
+
+button + button {
+	margin-left: 10px;
+}
