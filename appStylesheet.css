@@ -10,3 +10,8 @@ button + button {
 	display: block;
 	margin-top: 15px;
 }
+
+#english-language-text-view {
+	font-size: 24px;
+	margin-left: 15px;
+}

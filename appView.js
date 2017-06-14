@@ -21,6 +21,7 @@ define(function (require) {
      */
     return class extends ModuleView {
         loadI18n (languageRegionCode) {
+            this.i18n.table.clear()
             return this.i18n.load('i18n', languageRegionCode);
         }
 
@@ -82,6 +83,15 @@ define(function (require) {
             }).render(this.getView());
         }
 
+        renderEnglishLanguageMessage () {
+            new TextView({
+                id: "english-language-text-view",
+                model: {
+                    text: this.i18n.getString('i18n.english.only.text', ' ')
+                }
+            }).render(this.getView());
+        }
+
         renderUI () {
             const view = this.getView();
 
@@ -91,6 +101,7 @@ define(function (require) {
 
             this.renderButtons();
             this.renderWelcomeMessage();
+            this.renderEnglishLanguageMessage();
             this.renderFlagImage();
         }
     };
