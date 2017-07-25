@@ -8,9 +8,13 @@ define(require => {
             }
         }
         data () {
+            const 
+                greeting = this.getLocaleString('locale.greeting'),
+                formattedGreeting = this.getStandardFormat(`${greeting}$1`, '!');
+
             return [
                 {
-                    text: this.getLocaleString('locale.greeting'),
+                    text: formattedGreeting,
                     text1: this.getLocaleString('locale.english'),
                     icon: `${MODULE_PATH}/images/${this.getLocaleString('locale.flag')}`
                 }
