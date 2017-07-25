@@ -1,8 +1,4 @@
 {
-	"i18n.button.english.text": "アメリカ",
-	"i18n.button.japanese.text": "日本",
-	"i18n.button.spanish.text": "スペイン",
-	"i18n.button.canada.text": "カナダ",
-	"i18n.welcome.message": "日本へようこそ！",
-	"i18n.flag.image": "japan.png"
+	"locale.greeting": "日本へようこそ！",
+	"locale.flag": "japan.png"
 }
