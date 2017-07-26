@@ -1,12 +1,10 @@
 {
     "id"          : "sdk.user.i18n-demo",
     "name"        : "i18n-demo",
-    "css"         : [ "appStylesheet.css" ],
-    "template"    : "appLayout.html",
     "view"        : "appView.js",
-    "controller"  : "appController.js",
     "permissions" : [ ],
     "categoryId"  : "14",
     "date"        : "2017-05-05",
-    "version"     : "1.0.0"
+    "version"     : "1.0.0",
+    "screens"     : "screens.json"
 }

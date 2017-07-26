@@ -1,0 +1,11 @@
+[
+    {
+        "id": "locale-screen",
+        "chambers": [
+            {
+                "id": "locale-chamber",
+                "js": "screens/locale-chamber.js"
+            }
+        ]
+    }
+]
