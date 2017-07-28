@@ -10,7 +10,7 @@ define(require => {
         data () {
             const 
                 greeting = this.getLocaleString('locale.greeting'),
-                formattedGreeting = this.getStandardFormat(`${greeting}$1`, '!');
+                formattedGreeting = this.formatString(`${greeting}$1`, '!');
 
             return [
                 {
