@@ -18,13 +18,13 @@ define(require => {
             return super.beforeStart().then(() => {
                 this.getCommonLocaleString(['currency.symbol', 'currency.code', 'language.country']).then(response => {
                     Log.debug('These common strings were requested by the app:', response);
+                }).then(() => {
+                    return this.getCommonLocaleString('currency.symbol').then(response => {
+                        Log.debug('This common string was requested by the app:', response);
+                    });
+                }).then(() => {
+                    return this.controller.getCommonString();
                 });
-
-                this.getCommonLocaleString('currency.symbol').then(response => {
-                    Log.debug('This common string was requested by the app:', response);
-                });
-
-                this.controller.getCommonString();
             });
         }
 
