@@ -1,10 +1,28 @@
 [
     {
+        "id": "home-screen",
+        "chambers": [
+            {
+                "id": "home-chamber",
+                "js": "screens/home-chamber.js"
+            }
+        ]
+    },
+    {
         "id": "locale-screen",
         "chambers": [
             {
                 "id": "locale-chamber",
                 "js": "screens/locale-chamber.js"
+            }
+        ]
+    },
+    {
+        "id": "common-strings-screen",
+        "chambers": [
+            {
+                "id": "common-strings-chamber",
+                "js": "screens/common-strings-chamber.js"
             }
         ]
     }

@@ -1,11 +1,13 @@
-define(function (require) {
+define(require => {
     'use strict';
 
     const ModuleView = require('common/platform/ModuleView');
 
     return class extends ModuleView {
-        beforeStart () {
-            this.goto('locale-chamber');
+        started () {
+            return super.started(...arguments).then(() => {
+                this.goto('home-chamber');
+            });
         }
     };
 });

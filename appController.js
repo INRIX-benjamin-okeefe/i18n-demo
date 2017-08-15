@@ -5,9 +5,7 @@ define(require => {
 
     return class extends ModuleController {
         getCommonString () {
-            this.getCommonLocaleString('currency.code').then(response => {
-                Log.debug('This common string was requested by the app controller:', response);
-            });
+            return this.getCommonLocaleString('currency.code');
         }
     }
 });
