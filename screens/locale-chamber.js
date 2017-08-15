@@ -7,6 +7,27 @@ define(require => {
                 layout: 'hero'
             }
         }
+
+        init(screen) {
+            return super.init(screen).then(() => {
+                this.controller = this.moduleView.getController();
+            });
+        }
+
+        beforeStart () {
+            return super.beforeStart().then(() => {
+                this.getCommonLocaleString(['currency.symbol', 'currency.code', 'language.country']).then(response => {
+                    Log.debug('These common strings were requested by the app:', response);
+                });
+
+                this.getCommonLocaleString('currency.symbol').then(response => {
+                    Log.debug('This common string was requested by the app:', response);
+                });
+
+                this.controller.getCommonString();
+            });
+        }
+
         data () {
             const 
                 greeting = this.getLocaleString('locale.greeting'),

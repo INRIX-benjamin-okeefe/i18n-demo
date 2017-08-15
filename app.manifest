@@ -2,6 +2,7 @@
     "id"          : "sdk.user.i18n-demo",
     "name"        : "i18n-demo",
     "view"        : "appView.js",
+    "controller"  : "appController.js",
     "permissions" : [ ],
     "categoryId"  : "14",
     "date"        : "2017-05-05",
