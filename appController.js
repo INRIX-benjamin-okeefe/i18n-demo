@@ -4,8 +4,8 @@ define(require => {
     const ModuleController = require('common/platform/ModuleController');
 
     return class extends ModuleController {
-        getCommonString () {
-            return this.getCommonLocaleString('currency.code');
+        getCommonString (token) {
+            return this.getCommonLocaleString(token);
         }
     }
 });

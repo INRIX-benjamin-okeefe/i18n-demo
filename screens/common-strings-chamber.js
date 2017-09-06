@@ -23,7 +23,7 @@ define(require => {
             const asyncCalls = [
                 this.getCommonLocaleString(['currency.symbol', 'currency.code', 'language.country', 'language.code']),
                 this.getCommonLocaleString('currency.symbol'),
-                this.controller.getCommonString()
+                this.controller.getCommonString('calendar.day.sunday')
             ];
 
             return new Promise((resolve, reject) => {
