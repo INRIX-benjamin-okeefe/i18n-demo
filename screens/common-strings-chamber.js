@@ -13,12 +13,6 @@ define(require => {
             return result;
         }
 
-        init(screen) {
-            return super.init(screen).then(() => {
-                this.controller = this.moduleView.getController();
-            });
-        }
-
         data () {
             const asyncCalls = [
                 this.getCommonLocaleString(['currency.symbol', 'currency.code', 'language.country', 'language.code']),
